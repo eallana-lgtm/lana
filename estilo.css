@@ -11,6 +11,8 @@ div{
       display:flex;
       justify-content: conter;
       gap: 15px;
+}
+
 .galeria img {
       width: 250px;
       heigth: 250px;
