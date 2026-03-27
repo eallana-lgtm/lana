@@ -14,9 +14,7 @@ div{
   margin: auto;
 }
 
-.galeria {
-  display: flex;
-  animation: slide 9s infinite;
+
 }
 
 .galeria img {
