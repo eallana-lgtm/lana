@@ -7,3 +7,15 @@ div{
       justify-content: center ;
       flex-direction: column ;
 }
+.galeria {
+      display:flex;
+      justify-content: conter;
+      gap: 15px;
+.galeria img {
+      width: 250px;
+      heigth: 250px;
+      cursor: pointer;
+}
+.galeria img:hover {
+      transform: scale(1.05);
+}
