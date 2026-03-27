@@ -7,17 +7,26 @@ div{
       justify-content: center ;
       flex-direction: column ;
 }
-.galeria {
-      display:flex;
-      justify-content: conter;
-      gap: 15px;
+
+.carrossel {
+  width: 300px; /* tamanho do quadrinho */
+  overflow: hidden;
+  margin: auto;
 }
 
-.galeria img {
-      width: 250px;
-      heigth: 250px;
-      cursor: pointer;
+.container {
+  display: flex;
+  animation: slide 9s infinite;
 }
-.galeria img:hover {
-      transform: scale(1.05);
+
+.container img {
+  width: 300px;
+  height: auto;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-300px); }
+  66% { transform: translateX(-600px); }
+  100% { transform: translateX(0); }
 }
