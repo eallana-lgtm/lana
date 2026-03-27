@@ -8,25 +8,19 @@ div{
       flex-direction: column ;
 }
 
-.carrossel {
-  width: 300px; /* tamanho do quadrinho */
-  overflow: hidden;
-  margin: auto;
-}
-
-
+.galeria {
+      display:flex;
+      justify-content: conter;
+      gap: 15px;
 }
 
 .galeria img {
-  width: 300px;
-  height: auto;
+      width: 250px;
+      heigth: 250px;
+      cursor: pointer;
 }
-
-@keyframes slide {
-  0% { transform: translateX(0); }
-  33% { transform: translateX(-300px); }
-  66% { transform: translateX(-600px); }
-  100% { transform: translateX(0); }
+.galeria img:hover {
+      transform: scale(1.05);
 }
 
 .galeria {
