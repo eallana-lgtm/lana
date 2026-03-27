@@ -14,12 +14,12 @@ div{
   margin: auto;
 }
 
-.container {
+.galeria {
   display: flex;
   animation: slide 9s infinite;
 }
 
-.container img {
+.galeria img {
   width: 300px;
   height: auto;
 }
@@ -29,4 +29,10 @@ div{
   33% { transform: translateX(-300px); }
   66% { transform: translateX(-600px); }
   100% { transform: translateX(0); }
+}
+
+.galeria img {
+      display: grid;
+      grid-template-columns: reapeat(5, 1fr);
+      gap: 15px;
 }
