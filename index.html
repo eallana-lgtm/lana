@@ -14,11 +14,8 @@
             padding: 0;
         }
 
-        div { 
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
+        .card {
+            text-align: center;
         }
 
         /* CARROSSEL */
@@ -31,25 +28,23 @@
         .carousel-track {
             display: flex;
             width: max-content;
-            animation: scroll 25s linear infinite;
+            animation: scroll 20s linear infinite;
         }
 
-        /* PAUSA no hover */
+        /* PAUSAR com mouse */
         .carousel:hover .carousel-track {
             animation-play-state: paused;
         }
 
-        /* PAUSA no toque */
+        /* PAUSAR no celular */
         .carousel:active .carousel-track {
             animation-play-state: paused;
         }
 
         .carousel img {
-            width: 250px;
-            height: 250px;
+            width: 300px;
             margin-right: 10px;
             border-radius: 10px;
-            cursor: pointer;
             transition: 0.3s;
         }
 
@@ -64,10 +59,6 @@
             100% {
                 transform: translateX(-50%);
             }
-        }
-
-        .card {
-            text-align: center;
         }
 
         .btn {
@@ -98,18 +89,18 @@
         <div class="carousel-track">
 
             <!-- imagens -->
-            <a href="pag1.html"><img src="download.jpg"></a>
-            <a href="pag2.html"><img src="b031a1f9ff60f6f408f39e47fd9227cc.jpg"></a>
-            <a href="pag3.html"><img src="50c5f37d5f4a9be8292e1cb78ce90ca0.jpg"></a>
-            <a href="pag4.html"><img src="688adbd87b929941d0ed1573a649f886.jpg"></a>
-            <a href="pag5.html"><img src="abc73a2c84b47f4edb64f140a8a1071b.jpg"></a>
+            <a href="pag1.html"><img src="IMG-20260327-WA0038.jpg"></a>
+            <a href="pag2.html"><img src="IMG-20260327-WA0039.jpg"></a>
+            <a href="pag3.html"><img src="IMG-20260327-WA0042.jpg"></a>
+            <a href="pag4.html"><img src="IMG-20260327-WA0041.jpg"></a>
+            <a href="pag5.html"><img src="IMG-20260327-WA0040.jpg"></a>
 
-            <!-- repetir para infinito -->
-            <a href="pag1.html"><img src="download.jpg"></a>
-            <a href="pag2.html"><img src="b031a1f9ff60f6f408f39e47fd9227cc.jpg"></a>
-            <a href="pag3.html"><img src="50c5f37d5f4a9be8292e1cb78ce90ca0.jpg"></a>
-            <a href="pag4.html"><img src="688adbd87b929941d0ed1573a649f886.jpg"></a>
-            <a href="pag5.html"><img src="abc73a2c84b47f4edb64f140a8a1071b.jpg"></a>
+            <!-- repetir -->
+            <a href="pag1.html"><img src="IMG-20260327-WA0038.jpg"></a>
+            <a href="pag2.html"><img src="IMG-20260327-WA0039.jpg"></a>
+            <a href="pag3.html"><img src="IMG-20260327-WA0042.jpg"></a>
+            <a href="pag4.html"><img src="IMG-20260327-WA0041.jpg"></a>
+            <a href="pag5.html"><img src="IMG-20260327-WA0040.jpg"></a>
 
         </div>
     </div>
