@@ -1,61 +1,98 @@
 <!--- -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="estilo.css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device=width, insttial-scale=1.0">
-    <title>ℱ𝒶𝓁𝓁ℯ𝓃 𝒜𝓃ℊℯ𝓁</title>
-    <link rel="icon" type="image/x-icon" href="download__1_-removebg-preview.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ℱ𝒶𝓁𝓁ℯ𝓃 𝒜𝓃ℊℯ𝓁</title>
+    <link rel="icon" type="image/x-icon" href="download__1_-removebg-preview.png">
+
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            text-align: center;
+        }
+
+        /* CARROSSEL */
+        .carousel {
+            width: 100%;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+
+        .carousel-track {
+            display: flex;
+            animation: scroll 20s linear infinite;
+        }
+
+        .carousel img {
+            width: 300px;
+            margin-right: 10px;
+            border-radius: 10px;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: white;
+            color: black;
+            text-decoration: none;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        form {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
 </head>
+
 <body>
-    <div class = "card">
-        <h1 id>    ㅤㅤㅤㅤㅤㅤㅤ  </h1 id>
-        <img src="IMG-20260327-WA0018.jpg" alt="Fallen angel" width="1500" height="300">
-    </div>
-          <a href="pag1.html">
-       <div class="carousel-galeria">
-    <div class="carousel-wrapper">
-  <div class="carousel">
-<div class="carousel-item"><img src="download.jpg" alt="buda" width="500"></div>
-        </a>
-        <a href="pag2.html">
-        <div class="carousel-item"><img src="b031a1f9ff60f6f408f39e47fd9227cc.jpg" alt="Descrição da imagem" width="300"></div>
-        </a>
-        <a href="pag3.html">
-        <div class="carousel-item"><img src="50c5f37d5f4a9be8292e1cb78ce90ca0.jpg" alt="Descrição da imagem" width="300"></div>
-        </a>
-        <a href="pag4.html">
-        <div class="carousel-item"><img src="688adbd87b929941d0ed1573a649f886.jpg" alt="Descrição da imagem" width="300"></div>
-        </a>
-        <a href="pag5.html">
-        <div class="carousel-item"><img src="abc73a2c84b47f4edb64f140a8a1071b.jpg" alt="Descrição da imagem" width="300"></div>
-    </a>
-</div>
- </div>
-   </div>
-     </div>
-<body>  
-<button class="prev-btn">❮</button>
-<button class="next-btn">❯</button>
 
-    <form class="card" action="/enviar" method="post">
-  <!-- campos -->
-   <a href="form.html" class="btn">Ir para o Formulário</a>
-</form>
-</body>
-</body>
-<style>
-     body {
-        background-color: rgb(0, 0, 0);
-    }
-      p {
-  text-align: center;
-}
-    form {
-        text-align: center;
-    }
-</style>
+    <div class="card">
+        <img src="IMG-20260327-WA0018.jpg" alt="Fallen angel" width="100%" height="300">
+    </div>
+
+    <!-- CARROSSEL -->
+    <div class="carousel">
+        <div class="carousel-track">
+
+            <!-- imagens -->
+            <a href="pag1.html"><img src="download.jpg"></a>
+            <a href="pag2.html"><img src="b031a1f9ff60f6f408f39e47fd9227cc.jpg"></a>
+            <a href="pag3.html"><img src="50c5f37d5f4a9be8292e1cb78ce90ca0.jpg"></a>
+            <a href="pag4.html"><img src="688adbd87b929941d0ed1573a649f886.jpg"></a>
+            <a href="pag5.html"><img src="abc73a2c84b47f4edb64f140a8a1071b.jpg"></a>
+
+            <!-- repetir (pra ficar infinito) -->
+            <a href="pag1.html"><img src="download.jpg"></a>
+            <a href="pag2.html"><img src="b031a1f9ff60f6f408f39e47fd9227cc.jpg"></a>
+            <a href="pag3.html"><img src="50c5f37d5f4a9be8292e1cb78ce90ca0.jpg"></a>
+            <a href="pag4.html"><img src="688adbd87b929941d0ed1573a649f886.jpg"></a>
+            <a href="pag5.html"><img src="abc73a2c84b47f4edb64f140a8a1071b.jpg"></a>
+
+        </div>
+    </div>
+
+    <!-- BOTÃO -->
+    <form>
+        <a href="form.html" class="btn">Ir para o Formulário</a>
+    </form>
 
 </body>
-</html
+</html>
