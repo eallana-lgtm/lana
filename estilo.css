@@ -16,7 +16,7 @@ div{
 
 .galeria img {
       width: 250px;
-      heigth: 250px;
+      height: 250px;
       cursor: pointer;
 }
 .galeria img:hover {
