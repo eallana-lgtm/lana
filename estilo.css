@@ -4,6 +4,7 @@ body {
   padding: 0;
 }
 
+/* centralização geral */
 div { 
   display: flex;
   align-items: center;
@@ -20,7 +21,18 @@ div {
 
 .carousel-track {
   display: flex;
-  animation: scroll 20s linear infinite;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+
+/* PAUSA quando passa o mouse */
+.carousel:hover .carousel-track {
+  animation-play-state: paused;
+}
+
+/* PAUSA no celular */
+.carousel:active .carousel-track {
+  animation-play-state: paused;
 }
 
 .carousel img {
@@ -32,6 +44,7 @@ div {
   transition: 0.3s;
 }
 
+/* efeito zoom */
 .carousel img:hover {
   transform: scale(1.05);
 }
