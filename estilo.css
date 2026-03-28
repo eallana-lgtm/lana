@@ -10,7 +10,7 @@ div{
 
 .galeria {
       display:flex;
-      justify-content: conter;
+      justify-content: center;
       gap: 15px;
 }
 
@@ -25,6 +25,6 @@ div{
 
 .galeria {
       display: grid;
-      grid-template-columns: reapeat(5, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 15px;
 }
