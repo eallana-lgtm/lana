@@ -9,42 +9,48 @@
 
     <style>
         body {
-            background-color: black;
             margin: 0;
             padding: 0;
+
+            background-image: url("IMG-20260327-WA0018.jpg"); /* SUA IMAGEM DE FUNDO */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
         .card {
             text-align: center;
+            margin-top: 20px;
         }
 
         /* CARROSSEL */
         .carousel {
             width: 100%;
             overflow: hidden;
-            margin-top: 20px;
+            margin-top: 40px;
         }
 
         .carousel-track {
             display: flex;
             width: max-content;
-            animation: scroll 20s linear infinite;
+            animation: scroll 25s linear infinite;
         }
 
-        /* PAUSAR com mouse */
+        /* PAUSA */
         .carousel:hover .carousel-track {
             animation-play-state: paused;
         }
 
-        /* PAUSAR no celular */
         .carousel:active .carousel-track {
             animation-play-state: paused;
         }
 
         .carousel img {
-            width: 300px;
+            width: 250px;
+            height: 250px;
             margin-right: 10px;
             border-radius: 10px;
+            cursor: pointer;
             transition: 0.3s;
         }
 
@@ -80,15 +86,10 @@
 
 <body>
 
-    <div class="card">
-        <img src="IMG-20260327-WA0018.jpg" alt="Fallen angel" width="100%" height="300">
-    </div>
-
     <!-- CARROSSEL -->
     <div class="carousel">
         <div class="carousel-track">
 
-            <!-- imagens -->
             <a href="pag1.html"><img src="IMG-20260327-WA0038.jpg"></a>
             <a href="pag2.html"><img src="IMG-20260327-WA0039.jpg"></a>
             <a href="pag3.html"><img src="IMG-20260327-WA0042.jpg"></a>
