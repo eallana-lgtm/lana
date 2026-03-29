@@ -8,7 +8,6 @@
   <link rel="icon" type="image/x-icon" href="download__1_-removebg-preview.png">
 
   <style>
-    /* FUNDO */
     body {
       margin: 0;
       padding: 0;
@@ -19,18 +18,15 @@
       background-repeat: no-repeat;
       background-attachment: fixed;
 
-      display: flex;
-      flex-direction: column;
       min-height: 100vh;
+      position: relative;
     }
 
-    /* CONTEÚDO DE CIMA */
     .conteudo {
       text-align: center;
       margin-top: 40px;
     }
 
-    /* BOTÃO */
     .btn {
       display: inline-block;
       padding: 10px 20px;
@@ -41,16 +37,14 @@
       margin-top: 20px;
     }
 
-    form {
-      margin-top: 20px;
-    }
-
-    /* CARROSSEL (EMBAIXO) */
+    /* CARROSSEL */
     .carousel {
-      margin-top: auto;
+      position: absolute;
+      top: 55%;
+      left: 0;
       width: 100%;
+      transform: translateY(-50%);
       overflow: hidden;
-      margin-bottom: 20px;
     }
 
     .carousel-track {
@@ -98,7 +92,7 @@
     </form>
   </div>
 
-  <!-- CARROSSEL EMBAIXO -->
+  <!-- CARROSSEL NA POSIÇÃO QUE VOCÊ QUER -->
   <div class="carousel">
     <div class="carousel-track">
 
