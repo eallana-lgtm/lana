@@ -2,114 +2,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ℱ𝒶𝓁𝓁ℯ𝓃 𝒜𝓃ℊℯ𝓁</title>
-    <link rel="icon" type="image/x-icon" href="download__1_-removebg-preview.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ℱ𝒶𝓁𝓁ℯ𝓃 𝒜𝓃ℊℯ𝓁</title>
+  <link rel="icon" type="image/x-icon" href="download__1_-removebg-preview.png">
 
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
+  <style>
+    /* FUNDO */
+    body {
+      margin: 0;
+      padding: 0;
 
-            background-image: url("9ce7318324ad7cab94d355f5a44b140f.jpg"); /* SUA IMAGEM DE FUNDO */
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+      background-image: url("9ce7318324ad7cab94d355f5a44b140f.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
 
-        .card {
-            text-align: center;
-            margin-top: 20px;
-        }
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-        /* CARROSSEL */
-        .carousel {
-            width: 100%;
-            overflow: hidden;
-            margin-top: 40px;
-        }
+    /* CONTEÚDO DE CIMA */
+    .conteudo {
+      text-align: center;
+      margin-top: 40px;
+    }
 
-        .carousel-track {
-            display: flex;
-            width: max-content;
-            animation: scroll 25s linear infinite;
-        }
+    /* BOTÃO */
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: white;
+      color: black;
+      text-decoration: none;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
 
-        /* PAUSA */
-        .carousel:hover .carousel-track {
-            animation-play-state: paused;
-        }
+    form {
+      margin-top: 20px;
+    }
 
-        .carousel:active .carousel-track {
-            animation-play-state: paused;
-        }
+    /* CARROSSEL (EMBAIXO) */
+    .carousel {
+      margin-top: auto;
+      width: 100%;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
 
-        .carousel img {
-            width: 250px;
-            height: 250px;
-            margin-right: 10px;
-            border-radius: 10px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
+    .carousel-track {
+      display: flex;
+      width: max-content;
+      animation: scroll 25s linear infinite;
+    }
 
-        .carousel img:hover {
-            transform: scale(1.05);
-        }
+    .carousel:hover .carousel-track {
+      animation-play-state: paused;
+    }
 
-        @keyframes scroll {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
+    .carousel:active .carousel-track {
+      animation-play-state: paused;
+    }
 
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: white;
-            color: black;
-            text-decoration: none;
-            border-radius: 10px;
-            margin-top: 20px;
-        }
+    .carousel img {
+      width: 250px;
+      height: 250px;
+      margin-right: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
 
-        form {
-            text-align: center;
-            margin-top: 40px;
-        }
-    </style>
+    .carousel img:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+  </style>
 </head>
 
 <body>
 
-    <!-- CARROSSEL -->
-    <div class="carousel">
-        <div class="carousel-track">
+  <!-- PARTE DE CIMA -->
+  <div class="conteudo">
+    <h1 style="color: white;">Fallen Angel</h1>
 
-            <a href="pag1.html"><img src="IMG-20260327-WA0038.jpg"></a>
-            <a href="pag2.html"><img src="IMG-20260327-WA0039.jpg"></a>
-            <a href="pag3.html"><img src="IMG-20260327-WA0042.jpg"></a>
-            <a href="pag4.html"><img src="IMG-20260327-WA0041.jpg"></a>
-            <a href="pag5.html"><img src="IMG-20260327-WA0040.jpg"></a>
-
-            <!-- repetir -->
-            <a href="pag1.html"><img src="IMG-20260327-WA0038.jpg"></a>
-            <a href="pag2.html"><img src="IMG-20260327-WA0039.jpg"></a>
-            <a href="pag3.html"><img src="IMG-20260327-WA0042.jpg"></a>
-            <a href="pag4.html"><img src="IMG-20260327-WA0041.jpg"></a>
-            <a href="pag5.html"><img src="IMG-20260327-WA0040.jpg"></a>
-
-        </div>
-    </div>
-
-    <!-- BOTÃO -->
     <form>
-        <a href="form.html" class="btn">Ir para o Formulário</a>
+      <a href="form.html" class="btn">Ir para o Formulário</a>
     </form>
+  </div>
+
+  <!-- CARROSSEL EMBAIXO -->
+  <div class="carousel">
+    <div class="carousel-track">
+
+      <a href="pag1.html"><img src="IMG-20260327-WA0038.jpg"></a>
+      <a href="pag2.html"><img src="IMG-20260327-WA0039.jpg"></a>
+      <a href="pag3.html"><img src="IMG-20260327-WA0042.jpg"></a>
+      <a href="pag4.html"><img src="IMG-20260327-WA0041.jpg"></a>
+      <a href="pag5.html"><img src="IMG-20260327-WA0040.jpg"></a>
+
+      <!-- repetir -->
+      <a href="pag1.html"><img src="IMG-20260327-WA0038.jpg"></a>
+      <a href="pag2.html"><img src="IMG-20260327-WA0039.jpg"></a>
+      <a href="pag3.html"><img src="IMG-20260327-WA0042.jpg"></a>
+      <a href="pag4.html"><img src="IMG-20260327-WA0041.jpg"></a>
+      <a href="pag5.html"><img src="IMG-20260327-WA0040.jpg"></a>
+
+    </div>
+  </div>
 
 </body>
 </html>
