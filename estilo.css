@@ -4,14 +4,13 @@ body {
   padding: 0;
 
   background-image: url("9ce7318324ad7cab94d355f5a44b140f.jpg");
-  background-size: cover;        /* ocupa tudo */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-  display: flex;
-  flex-direction: column;
   min-height: 100vh;
+  position: relative; /* IMPORTANTE */
 }
 
 /* CONTEÚDO DE CIMA */
@@ -31,14 +30,17 @@ body {
   margin-top: 20px;
 }
 
-/* CARROSSEL (EMBAIXO) */
+/* CARROSSEL (POSIÇÃO FIXA) */
 .carousel {
-  margin-top: auto; /* empurra pra baixo */
+  position: absolute;
+  top: 55%;
+  left: 0;
   width: 100%;
+  transform: translateY(-50%);
   overflow: hidden;
-  margin-bottom: 20px;
 }
 
+/* TRACK */
 .carousel-track {
   display: flex;
   width: max-content;
@@ -70,10 +72,6 @@ body {
 
 /* ANIMAÇÃO */
 @keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
