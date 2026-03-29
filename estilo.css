@@ -1,7 +1,11 @@
 body {
-  background-color: black;
   margin: 0;
   padding: 0;
+
+  background-image: url("fundo.jpg"); /* coloca o nome da sua imagem aqui */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* centralização geral */
