@@ -10,16 +10,14 @@ body {
   background-attachment: fixed;
 
   min-height: 100vh;
-  position: relative; /* IMPORTANTE */
+  position: relative;
 }
 
-/* CONTEÚDO DE CIMA */
 .conteudo {
   text-align: center;
   margin-top: 40px;
 }
 
-/* BOTÃO */
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -30,21 +28,24 @@ body {
   margin-top: 20px;
 }
 
-/* CARROSSEL (POSIÇÃO FIXA) */
+/* CARROSSEL */
 .carousel {
   position: absolute;
-  top: 100%;
+  top: 55%;
   left: 0;
   width: 100%;
   transform: translateY(-50%);
   overflow: hidden;
+
+  touch-action: pan-y; /* permite rolar o site */
 }
 
-/* TRACK */
 .carousel-track {
   display: flex;
   width: max-content;
   animation: scroll 25s linear infinite;
+
+  touch-action: pan-y; /* evita travar o scroll */
 }
 
 /* PAUSA */
