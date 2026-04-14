@@ -13,11 +13,13 @@ body {
   position: relative;
 }
 
+/* CONTEÚDO */
 .conteudo {
   text-align: center;
   margin-top: 40px;
 }
 
+/* BOTÃO */
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -26,4 +28,29 @@ body {
   text-decoration: none;
   border-radius: 10px;
   margin-top: 20px;
+}
+
+/* ✨ LOGO INTERATIVO */
+.cabeçalho {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.cabeçalho img {
+  width: 250px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* PC (hover) */
+.cabeçalho img:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* CELULAR (toque) */
+.cabeçalho img:active {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
