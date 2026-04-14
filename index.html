@@ -36,15 +36,36 @@
       border-radius: 10px;
       margin-top: 20px;
     }
- </style>
-    
+
+    /* ✨ SUA PARTE INTERATIVA */
+    .cabeçalho img {
+      width: 250px; /* ajusta se quiser */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .cabeçalho img:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    /* opcional: posicionar melhor na tela */
+    .cabeçalho {
+      position: absolute;
+      top: 50px;
+      left: 50px;
+    }
+
+  </style>
+</head>
+
+<body>
+
   <div class="cabeçalho">
     <a href="https://open.spotify.com/intl-pt/album/1XkGORuUX2QGOEIL4EbJKm?si=WaFh28V4Sgu-rn9_cbhz6w">
-    <img src="arcticmonkeys.png" alt="album">
+      <img src="arcticmonkeys.png" alt="album">
     </a>
-    </div>
-    
-    
+  </div>
 
-
-    
+</body>
+</html>
