@@ -36,3 +36,4 @@ formulario.addEventListener('submit', function(evento){
     const meuCopo = fazerFruta('banana');
     console.log(meuCopo);
 
+
