@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Gerador de Objetos</title>
+    <style>
+        .formulario{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    </style>
+    <script src= 'script2.js' defer></script>
+</head>
+<body>
+    <div class = 'formulario'>
+        <h2 class = 'titulo'>Cadastrar</h2>
+        <form id="meuFormulario">
+        <label for="titulo">Nome do gato</label>
+        <input type="text" id="titulo" placeholder="Titulo" required><br>
+        <label for="imagem">Imagem do gato</label>
+        <input type="url" id="imagem" placeholder="URL da imagem" required><br>
+
+        <label for="descricao">Descrição da imagem</label>
+        <input type="text" id="descricao" placeholder="Descreva a imagem adicionada" required><br>
+
+        <label for="paragrafo">Escreva sobre o gato</label>
+        <textarea id="paragrafo" placeholder="Diga"></textarea><br>
+        <button type="submit">Adicionar</button>
+    </form>
+    </div>
+
+    
+    <div id="colecao"></div>
+
+</body>
+</html>
