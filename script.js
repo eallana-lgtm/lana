@@ -27,13 +27,3 @@ formulario.addEventListener('submit', function(evento){
     formulario.reset(); //limpa o formulario
 
     });
-
-    function fazerFruta(fruta){
-        const resultado = "Suco de "+ fruta;
-        return resultado;
-    }
-
-    const meuCopo = fazerFruta('banana');
-    console.log(meuCopo);
-
-
