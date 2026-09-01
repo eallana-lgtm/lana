@@ -109,13 +109,13 @@ body {
         }
 
         .card h3 {
-            color: #5c6bc0;
+            color: #000000;
             margin: 0 0 10px 0;
             text-align: center;
         }
 
         .card p {
-            color:#050404;
+            color:#000000;
             text-align: center;
             margin: 0 0 10px 0;
         }
@@ -138,7 +138,7 @@ body {
 
         .card .descricao {
             font-size: 14px;
-            color:#f5ec9f;
+            color: #fcee77;
             text-align: center;
             margin: 0;
         }
