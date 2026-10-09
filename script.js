@@ -50,4 +50,19 @@ formulario.addEventListener('submit', function(evento){
 
     colecao.innerHTML += novoCard;
     formulario.reset(); // limpa o formulário
+
+    form.addEventListener('submit', funtion(e) {
+        epreventDefault(); // Impedde o reload
+
+        const novaObra = new ObraDeArte(t, desc, img, alt);
+
+        fetch('/api/lista', {
+            method: 'POST',
+            headers: {
+                'Content-Type 'application/json'
+            })
+                .then(() => {
+                    window.location.href + 'index.html';
+                });
+    });
 });
